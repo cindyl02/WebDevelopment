@@ -11,9 +11,11 @@ def is_authenticated_decorator(function):
 
     return wrapper_function
 
+
 @is_authenticated_decorator
 def create_blog_post(user):
     print(f"This is {user.name}'s blog post!")
+
 
 new_user = User("Angela")
 new_user.is_logged_in = True

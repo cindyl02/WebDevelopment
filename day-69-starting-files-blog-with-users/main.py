@@ -39,6 +39,7 @@ gravatar = Gravatar(app,
                     use_ssl=False,
                     base_url=None)
 
+
 # Create a user_loader callback
 @login_manager.user_loader
 def load_user(user_id):
